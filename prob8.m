@@ -1,0 +1,10 @@
+Lp = 0.1:0.1:2;
+lambda = 1300e-9;
+k0 = (2*pi)/lambda;
+beta = (2 * pi) ./ Lp;
+Bf = beta ./ k0;
+figure(100);
+clf;
+plot(Lp, Bf);
+xlabel('Lp');
+ylabel('Bf');
